@@ -3,7 +3,7 @@
 
 // Polyfilling Object.entries for Safari :/
 Object.entries = (object) => Object.keys(object).map(
-  (key) => [ key, object[key] ]
+  (key) => [key, object[key]]
 )
 
 const isObject = (obj) => obj === Object(obj)
@@ -62,8 +62,8 @@ const updateTheme = (theme) => {
   if (!isObject(theme)) return
 
   Object
-  .entries(theme)
-  .forEach(([key, value]) => setCSSVariable(key, value))
+    .entries(theme)
+    .forEach(([key, value]) => setCSSVariable(key, value))
 
   saveTheme(theme)
 }

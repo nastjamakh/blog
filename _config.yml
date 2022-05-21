@@ -1,42 +1,39 @@
 # Base blog settings
-baseurl                      : "/dactl/" # the subpath of your site,                         # e.g. /blog/
+baseurl                      : "/blog" # the subpath of your site,                         # e.g. /blog/
                               # set to '' in case of hosting on GitHub
 url                          : "" # the base hostname & protocol for your site
                                   # `http://<username>.github.io` - for GitHub
 
 blog:
-  title                      : dactl
-  description                  : >
-                               this should contain a proper description
+  title                      : nastja
+  description                  : Notes on Machine Learning in Production
 
 # Layout configuration
-  logo_path                  : "assets/img/dactl.svg" # path to logo file
-  search_path                : # "yourgitusername.github.io"
+  #logo_path                  : "assets/img/beverage-drink-hot-pot-tea-water-svgrepo-com.svg" # path to logo file
+  search_path                : "nastjamakhonina.com"
                                # needed for searchbox in archive page
-  hero_layout                : true # turn on hero layout for blog and posts
+  hero_layout                : false # turn on hero layout for blog and posts
   hero_placeholder           : "assets/img/generic_hero.jpg" # placeholder for hero image
   excerpts                   : true # show excerpts instead of full post content on blog page
   inline_footnotes           : true # enable/disable barefoot inline footnotes
   titles_only                : false # show post titles only on main blog page
 
 # Fonts
-  font                       : '"Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif'
-  load_google_fonts          : 'Rubik:400,400italic,700,700italic'
+  #font                       : '"Rubik", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif'
+  #load_google_fonts          : 'Rubik:400,400italic,700,700italic'
+  font                       : '"Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans'
+  load_google_fonts          : 'Plus Jakarta Sans:200,extralight200italic'
 
 
 # Author info
 author:
-  fullname                  : Your Name
+  fullname                  : Anastasia Makhonina
   rss                       : true # generate RSS feed and show it's icon in header
-  mail                      : your@email.com # change to your e-mail address
-  twitter                   : twitter-user-name
-  github                    : github-user-name
-  youtube                   : youtube-user-name
-  stackoverflow             : stackoverflow-user-name
-  disqus                    : dactl # your disqus site name
-  google_analytics          : # 'UA-XXXXXXXX-X'
-  photo                     : "uploads/me2.png"
-  photo2x                   : "uploads/me.png"
+  mail                      : nastja.makhonina@gmail.com # change to your e-mail address
+  github                    : nastjamakh
+  linkedin                  : Anastasia Makhonina
+  photo                     : "uploads/disney_profile-min.png"
+  photo2x                   : "uploads/disney_profile-min.png"
 
 
 
@@ -56,7 +53,7 @@ permalink                    : posts/:slug
 excerpt_separator            : <!–-break-–>
 
 # Pagination
-paginate                     : 5
+paginate                     : 10
 paginate_path                : '/page-:num/'
 
 # Tags

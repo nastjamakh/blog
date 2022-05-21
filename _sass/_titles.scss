@@ -3,29 +3,30 @@
 
 .page-title-container,
 .post-title-container {
-    width: 100%;
-    margin-bottom: 6rem;
-    height: 20rem;
+  width: 100%;
+  margin-bottom: 6rem;
+  height: 20rem;
 
-    text-align: center;
+  text-align: center;
+  position: relative;
+
+  h1 {
+    font-weight: $base-font-weight-bold;
+    font-size: $post-title-size;
+    border: 0; // reset
+
+    a {
+      display: block; // slide border needs to cover the whole heading
+      @include border-slide(left)
+    }
+  }
+
+  // heading container
+  .heading-container {
     position: relative;
-
-    h1 {
-      font-weight: $base-font-weight-bold;
-      font-size: $post-title-size;
-      border: 0; // reset
-      a {
-        display: block; // slide border needs to cover the whole heading
-        @include border-slide(left)
-      }
-    }
-
-    // heading container
-    .heading-container {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
 }
 
@@ -50,30 +51,33 @@
 }
 
 @media (max-width: 48rem) {
-    .page-title,
-    .post-title {
-        height: 10rem;
-        margin-bottom: 2rem;
 
-        h1 {
-          font-size: 2.5rem;
-        }
+  .page-title,
+  .post-title {
+    height: 10rem;
+    margin-bottom: 2rem;
+
+    h1 {
+      font-size: 2.5rem;
     }
-    .post-meta {
-      font-size: $mobile-font-size;
-    }
+  }
+
+  .post-meta {
+    font-size: $mobile-font-size;
+  }
 }
 
 // Hero layout off - blog post titles
 //-------------------------------
 .post-title-container-nohero {
-    margin-bottom: 4rem;
-    text-align: center;
+  margin-bottom: 4rem;
+  text-align: center;
 
-    h1 {
+  h1 {
     margin: 0;
     font-size: $blog-title-size;
-    }
+    // font-family: $blog-title-font;
+  }
 }
 
 .post-meta-nohero {
@@ -86,7 +90,7 @@
     color: var(--text-color-light);
     margin: 0 .25em;
     text-transform: lowercase;
-    }
+  }
 }
 
 .post-meta-link-nohero {
@@ -94,11 +98,11 @@
 }
 
 .no-hero-margin {
-    margin-bottom: 0rem; // margin reset
+  margin-bottom: 0rem; // margin reset
 }
 
 @media (max-width: 48rem) {
-    .post-title-container-nohero h1 {
-      font-size: 2rem;
-      }
-    }
+  .post-title-container-nohero h1 {
+    font-size: 2rem;
+  }
+}
