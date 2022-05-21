@@ -7,3 +7,13 @@
 # Temporary files
 .sass-cache/
 .jekyll-metadata
+
+posts/2017-03-16-footnotes-in-dactl.md
+posts/2017-03-17-post-excerpts-lead-paragraphs.md
+posts/2017-03-18-tags-in-dactyl.md
+posts/2017-03-19-yaml-frontmatter.md
+posts/2017-03-20-config-settings.md
+posts/2017-03-20-notices.md
+posts/2017-03-22-welcome-to-dactl.md
+posts/2022-05-21-new-laptop-macos-setup.md
+posts/2017-01-20-example-content.md
