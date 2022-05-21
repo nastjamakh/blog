@@ -48,31 +48,34 @@
     top: 50%;
     transform: translate(-50%, -50%);
     transition: color .25s ease;
-	}
+  }
 
   /* fix focus */
-  &:focus{
+  &:focus {
     outline: none
   }
+
   &:hover {
     // background: rgba(110, 110, 110, .5);
     background: var(--table-header-color);
     outline: none;
+
     &:after {
       color: var(--text-color);
 
       outline: none;
-		}
-	}
+    }
+  }
 
   &.is-active {
     // background: rgba(110, 110, 110, 1);
     background: var(--table-border-color);
     transition-delay: .1s;
+
     &:after {
       color: var(--text-color);
-		}
-	}
+    }
+  }
 }
 
 .bf-footnote {
@@ -94,12 +97,12 @@
 
   &.footnote-is-active {
     opacity: 1;
-	}
+  }
 
   &.footnote-is-top {
     bottom: 0;
     top: auto;
-	}
+  }
 }
 
 .footnote-wrapper {
@@ -111,10 +114,11 @@
   position: relative;
   width: 22em;
   z-index: 14;
+
   /* nie dziala ??*/
-    &:focus {
-      outline: none;
-    }
+  &:focus {
+    outline: none;
+  }
 }
 
 .footnote-tooltip {
@@ -154,7 +158,8 @@
     margin-bottom: 0;
     padding-bottom: 0;
   }
-/* font-size for footnote content*/
+
+  /* font-size for footnote content*/
   p {
     font-size: $footnote-font-size;
   }

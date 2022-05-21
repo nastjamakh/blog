@@ -5,14 +5,16 @@
 .post-title-container {
   width: 100%;
   margin-bottom: 6rem;
-  height: 20rem;
+  height: 10rem;
 
-  text-align: center;
+  text-align: left;
   position: relative;
 
   h1 {
     font-weight: $base-font-weight-bold;
     font-size: $post-title-size;
+    font-family: $post-title-font;
+    font-weight: bold;
     border: 0; // reset
 
     a {
