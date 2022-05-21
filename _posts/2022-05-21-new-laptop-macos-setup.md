@@ -43,7 +43,7 @@ Unfortunately we cannot make `mas` print just a list of applications IDs. Hence 
 * each line is then prefixed with installation command
 * save results to a script
 
-We append isntallation commands for apps installed with brew cask in the same script.
+We append installation commands for apps installed with brew cask in the same script.
 
 ### Installation script 2: brew packages
 
