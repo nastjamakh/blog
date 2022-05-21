@@ -129,46 +129,28 @@ strong {
   color: var(--text-color);
 }
 
-.sidebar__right {
-  margin-bottom: 1em;
 
-  @include breakpoint($large) {
-    position: sticky !important;
-    /* added to make toc scroll with page */
-    float: right !important;
-    /* added to make toc scroll with page */
-    top: 0;
-    right: 0;
-    width: $right-sidebar-width-narrow;
-    margin-right: -1 * $right-sidebar-width-narrow;
-    padding-left: 1em;
-    padding-top: 1em !important;
-    /* added to make toc scroll with page */
-    z-index: 10;
-  }
+// Lists, blockquotes
+//-------------------------------
 
+ul,
+ol,
+dl {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
 
-  // Lists, blockquotes
-  //-------------------------------
+// HR, IMG
+//-------------------------------
 
-  ul,
-  ol,
-  dl {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-  }
+hr {
+  margin-bottom: 4em;
+  max-width: 30%;
+  border: 0.1em solid var(--shadow-color);
+}
 
-  // HR, IMG
-  //-------------------------------
-
-  hr {
-    margin-bottom: 4em;
-    max-width: 30%;
-    border: 0.1em solid var(--shadow-color);
-  }
-
-  img {
-    margin: 2.5rem auto;
-    display: block;
-    max-width: 100%;
-  }
+img {
+  margin: 2.5rem auto;
+  display: block;
+  max-width: 100%;
+}
